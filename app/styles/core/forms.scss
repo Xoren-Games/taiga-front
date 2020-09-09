@@ -11,21 +11,31 @@ input[type='password'],
 input[type='url'],
 input[type='email'],
 input[type='date'],
+input[type='search'],
 select,
 textarea {
-    background: $grey-02;
-    border: 1px solid $gray-light;
-    color: $grayer;
+    background: $white;
+    border: 1px solid $color-gray400;
+    border-radius: 3px;
+    color: $color-black900;
     margin: 0;
-    padding: 8px;
+    padding: 6px;
     width: 100%;
+    &:focus {
+        outline-color: $color-gray400;
+    }
     @include placeholder {
-        color: $gray-lighter;
+        color: $color-black900;
+        opacity: .5;
     }
     &.checksley-error {
         border: 1px solid $red;
         transition: border .3s linear;
     }
+}
+input[type='search'] {
+    box-sizing: border-box;
+    padding-right: 30px;
 }
 button,
 button:active,

@@ -77,3 +77,20 @@
         vertical-align: middle;
     }
 }
+
+.empty-backlog {
+    padding: 1rem 2rem;
+
+    .no-match {
+        @include font-size(large);
+
+        color: $color-black900;
+        margin-bottom: 15px;
+    }
+
+    .no-match-help {
+        @include font-size(small);
+
+        color: $color-link-tertiary;
+    }
+}
